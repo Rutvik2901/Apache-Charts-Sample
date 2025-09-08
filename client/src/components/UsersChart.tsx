@@ -44,8 +44,6 @@ const UserStatsChart: React.FC = () => {
   // Fetch stats when year changes
   useEffect(() => {
     if (!selectedYear) return;
-    console.log("here");
-
 
     const fetchData = async () => {
       if (cache[selectedYear]) {

@@ -4,7 +4,7 @@ const User = require('../models/User');
  * GET /api/users/years
  * Returns distinct registration years sorted desc
  */
-exports.getYears = async (req, res) => {
+exports.getYears = async (_req, res) => {
     try {
         const years = await User.aggregate([
             {
