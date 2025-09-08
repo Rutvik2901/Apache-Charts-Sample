@@ -24,7 +24,7 @@ async function seed() {
         for (const year of years) {
             for (let month = 0; month < 12; month++) {
                 // Generate random user count per month
-                const userCount = faker.number.int({ min: 5, max: 40 });
+                const userCount = faker.number.int({ min: 2500, max: 10000 });
 
                 for (let i = 0; i < userCount; i++) {
                     const day = faker.number.int({ min: 1, max: 28 }); // safe days

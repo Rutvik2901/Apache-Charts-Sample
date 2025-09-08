@@ -8,4 +8,7 @@ const userSchema = new mongoose.Schema({
     timestamps: true
 });
 
+// Add an index on registrationDate
+userSchema.index({ registrationDate: 1 });
+
 module.exports = mongoose.model('User', userSchema);
